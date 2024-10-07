@@ -27,4 +27,23 @@ body{
     height: 250px;
     background: white;
     border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.lights{
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background: #000;
+    left: 50%;
+    transform: rotate(calc(12deg * var(--i)));
+    transform-origin: 0 50px;
+    left: 50%;
 }
