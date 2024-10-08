@@ -22,7 +22,7 @@ body{
     margin: 50px auto;
     padding: 100px;
 }
-.container .card{
+.container .card,.card1{
     width: 300px;
     height: 150px;
     background: transparent;
@@ -49,10 +49,10 @@ body{
     left: 50%;
     transform: rotate(calc(12deg * var(--i)));
     transform-origin: 0 50px;
-    animation: loading 2s ease-in-out infinite;
+    animation: loading1 2s ease-in-out infinite;
     animation-delay: calc(0.03s * var(--i));
 }
-@keyframes loading{
+@keyframes loading1{
     0%,50%{
         background: #585252;
         box-shadow: none;
@@ -65,3 +65,23 @@ body{
     }
 }
 /* loader2 */
+.container .card2{
+    background: #ffffff;
+}
+.loader2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    border-top: 10px solid #000;
+    animation: loading2 1.3s linear infinite;
+}
+@keyframes loading2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* loader3 */
