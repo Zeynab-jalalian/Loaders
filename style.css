@@ -131,9 +131,29 @@ body{
     display: flex;
 }
 .loader4 span{
-    height: 30px;
-    width: 30px;
-    background: red;
-    margin: 0 10px;
+    height: 35px;
+    width: 35px;
+    margin: 0 5px;
     border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    animation: loading4 1s linear infinite alternate;
+    animation-delay: calc(var(--i) * -1s);
 }
+.loader4 span:nth-child(1){
+ background: purple;
+}
+.loader4 span:nth-child(2){
+background: deeppink;
+}
+.loader4 span:nth-child(3){
+background: rgb(0, 89, 255);
+}
+@keyframes loading4{
+    0%{
+        transform: translateY(-7px);
+    }
+    100%{
+        transform: translateY(7px);
+    }
+}
+/* loader5 */
