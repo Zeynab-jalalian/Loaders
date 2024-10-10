@@ -34,10 +34,10 @@ body{
     border-radius: 20px;
     
 }
-/* loader1 */
 .loader{
     position: relative;
 }
+/* loader1 */
 .loader1{
     width: 100px;
     height: 100px;
@@ -83,3 +83,47 @@ body{
     }
 }
 /* loader3 */
+.card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card3 h3{
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    animation: text3 1.5s linear infinite;
+}
+.loader3{
+    width: 200px;
+    height: 25px;
+    border: 1px solid rgb(0, 75, 0);
+    border-radius: 20px;
+}
+.loader3 .loader-in{
+    background: rgb(0, 158, 0);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    animation: loading3 1.5s ease-in-out infinite;
+}
+@keyframes loading3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes text3 {
+    0%{
+       opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+/* loader4 */
