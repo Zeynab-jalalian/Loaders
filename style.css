@@ -90,14 +90,14 @@ body{
     flex-direction: column;
 }
 .card3 h3{
-    color: rgb(0, 0, 0);
+    color: rgb(57, 83, 46);
     margin-bottom: 15px;
     animation: text3 1.5s linear infinite;
 }
 .loader3{
     width: 200px;
     height: 25px;
-    border: 1px solid rgb(0, 75, 0);
+    border: 1px solid rgb(2, 54, 2);
     border-radius: 20px;
 }
 .loader3 .loader-in{
@@ -120,10 +120,20 @@ body{
 }
 @keyframes text3 {
     0%{
-       opacity: 0;
+       opacity: 0.3;
     }
     100%{
       opacity: 1;
     }
 }
 /* loader4 */
+.loader4{
+    display: flex;
+}
+.loader4 span{
+    height: 30px;
+    width: 30px;
+    background: red;
+    margin: 0 10px;
+    border-radius: 50%;
+}
