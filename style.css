@@ -199,63 +199,126 @@ body {
     position: absolute;
     animation-delay: calc(var(--i) * -1s);
 }
-.loader5 span:nth-child(1){
+
+.loader5 span:nth-child(1) {
     top: -20px;
     background: rgb(255, 0, 0);
     animation: loading51 1s linear infinite alternate-reverse;
-  
+
 }
-.loader5 span:nth-child(2){
+
+.loader5 span:nth-child(2) {
     top: 20px;
     background: rgb(21, 102, 1);
     animation: loading52 1s linear infinite alternate-reverse;
-   
+
 }
-.loader5 span:nth-child(3){
+
+.loader5 span:nth-child(3) {
     left: 20px;
     background: rgb(255, 153, 0);
     animation: loading53 1s linear infinite alternate-reverse;
-   
+
 }
-.loader5 span:nth-child(4){
+
+.loader5 span:nth-child(4) {
     left: -20px;
     background: rgb(0, 17, 255);
     animation: loading54 1s linear infinite alternate-reverse;
-   
+
 }
-@keyframes loading51{
-    0%{
-     top: -20px;
+
+@keyframes loading51 {
+    0% {
+        top: -20px;
     }
-    100%{
+
+    100% {
         top: 20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     }
 }
-@keyframes loading52{
-    0%{
-     top: 20px;
+
+@keyframes loading52 {
+    0% {
+        top: 20px;
     }
-    100%{
+
+    100% {
         top: -20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     }
 }
-@keyframes loading53{
-    0%{
-     left: 20px;
+
+@keyframes loading53 {
+    0% {
+        left: 20px;
     }
-    100%{
+
+    100% {
         left: -20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     }
 }
-@keyframes loading54{
-    0%{
-     left: -20px;
+
+@keyframes loading54 {
+    0% {
+        left: -20px;
     }
-    100%{
+
+    100% {
         left: 20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     }
 }
+
+/* loader6 */
+.loader6 {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.loader6 span {
+    background: #ff8a8a;
+    width: 5px;
+    margin: 0 5px;
+    animation: loading6 1.2s linear infinite alternate;
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+.loader6 span:nth-child(1) {
+    height: 90px;
+}
+
+.loader6 span:nth-child(2) {
+    height: 70px;
+}
+
+.loader6 span:nth-child(3) {
+    height: 50px;
+}
+
+.loader6 span:nth-child(4) {
+    height: 40px;
+}
+
+.loader6 span:nth-child(5) {
+    height: 30px;
+}
+
+.loader6 span:nth-child(6) {
+    height: 20px;
+}
+
+@keyframes loading6 {
+    0% {
+        background: #ff8a8a;
+    }
+
+    100% {
+        background: red;
+        box-shadow: 0 0 5px red;
+    }
+}
+/* loader7 */
