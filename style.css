@@ -411,3 +411,34 @@ body {
     }
 }
 /* loader9 */
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(#c7a200,rgb(65, 227, 255),rgb(172, 146, 0));
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    border: 1px solid #eee;
+    position: relative;
+    animation: loading9 2s linear infinite;
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: inset 0 -5px 3px rgba(255, 255, 255, 0.3);
+}
+@keyframes loading9{
+    0%{
+        transform: rotate(0deg);
+    }
+ 100%{
+        transform: rotate(360deg);
+    }
+}
