@@ -362,7 +362,7 @@ body {
     font-size: 17px;
     letter-spacing: 2px;
     color: #000000;
-    animation: loading8 3s infinite;
+    animation: loading8 2.2s infinite;
 }
 .loader8 span:nth-child(1){
  animation-delay: 0.2s;
@@ -394,12 +394,7 @@ body {
    .loader8 span:nth-child(10){
        animation-delay: 2s;
    }
-.loader8 span:nth-child(11){
-    animation-delay: 2.2s;
-}
-.loader8 span:nth-child(12){
-    animation-delay: 2.4s;
-}
+
 @keyframes loading8{
     0%{
      color: rgba(255, 255, 255, 0.1);
