@@ -342,7 +342,7 @@ body {
      opacity: 0;
     }
     50%{
-        transform: translateX(10px) scaleY(1.1);
+        transform: translateX(10px) scaleY(1.3);
         opacity: 1;
     }
     100%{
