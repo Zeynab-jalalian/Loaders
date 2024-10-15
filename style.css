@@ -480,6 +480,9 @@ body {
     .container .card9{
         border-bottom: none;
     }
+    .circle::before{
+        background: skyblue;
+    }
 }
 @media (max-width:400px){
     .container .card{
